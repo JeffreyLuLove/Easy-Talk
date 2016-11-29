@@ -15,6 +15,9 @@
 		85C8FED81DED8EB90044DA83 /* Easy_TalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FED71DED8EB90044DA83 /* Easy_TalkTests.m */; };
 		85C8FEE31DED8EB90044DA83 /* Easy_TalkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEE21DED8EB90044DA83 /* Easy_TalkUITests.m */; };
 		85C8FEF11DED90100044DA83 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 85C8FEF01DED90100044DA83 /* PodFile */; };
+		85C8FEF41DED93840044DA83 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEF31DED93840044DA83 /* LoadingViewController.m */; };
+		85C8FEF81DEDA8F70044DA83 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEF71DEDA8F70044DA83 /* FriendsTableViewController.m */; };
+		85C8FEFB1DEDAB110044DA83 /* EaseMobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEFA1DEDAB110044DA83 /* EaseMobManager.m */; };
 		B9908FD159B44AF7403FB3B4 /* libPods-Easy-Talk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9BC91B0B40D382EF369FB7 /* libPods-Easy-Talk.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,13 @@
 		85C8FEE21DED8EB90044DA83 /* Easy_TalkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Easy_TalkUITests.m; sourceTree = "<group>"; };
 		85C8FEE41DED8EB90044DA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C8FEF01DED90100044DA83 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		85C8FEF21DED93840044DA83 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		85C8FEF31DED93840044DA83 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		85C8FEF51DED939A0044DA83 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		85C8FEF61DEDA8F70044DA83 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
+		85C8FEF71DEDA8F70044DA83 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		85C8FEF91DEDAB110044DA83 /* EaseMobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseMobManager.h; sourceTree = "<group>"; };
+		85C8FEFA1DEDAB110044DA83 /* EaseMobManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseMobManager.m; sourceTree = "<group>"; };
 		BD9BC91B0B40D382EF369FB7 /* libPods-Easy-Talk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Easy-Talk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +120,12 @@
 			children = (
 				85C8FEBD1DED8EB80044DA83 /* AppDelegate.h */,
 				85C8FEBE1DED8EB80044DA83 /* AppDelegate.m */,
+				85C8FEF21DED93840044DA83 /* LoadingViewController.h */,
+				85C8FEF31DED93840044DA83 /* LoadingViewController.m */,
+				85C8FEF61DEDA8F70044DA83 /* FriendsTableViewController.h */,
+				85C8FEF71DEDA8F70044DA83 /* FriendsTableViewController.m */,
+				85C8FEF91DEDAB110044DA83 /* EaseMobManager.h */,
+				85C8FEFA1DEDAB110044DA83 /* EaseMobManager.m */,
 				85C8FEC91DED8EB90044DA83 /* Assets.xcassets */,
 				85C8FECB1DED8EB90044DA83 /* LaunchScreen.storyboard */,
 				85C8FECE1DED8EB90044DA83 /* Info.plist */,
@@ -123,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				85C8FEBB1DED8EB80044DA83 /* main.m */,
+				85C8FEF51DED939A0044DA83 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -333,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -345,7 +362,10 @@
 			files = (
 				85C8FEBF1DED8EB80044DA83 /* AppDelegate.m in Sources */,
 				85C8FEBC1DED8EB80044DA83 /* main.m in Sources */,
+				85C8FEF81DEDA8F70044DA83 /* FriendsTableViewController.m in Sources */,
 				85C8FEC81DED8EB80044DA83 /* Easy_Talk.xcdatamodeld in Sources */,
+				85C8FEFB1DEDAB110044DA83 /* EaseMobManager.m in Sources */,
+				85C8FEF41DED93840044DA83 /* LoadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +497,7 @@
 			baseConfigurationReference = 52A5184D98C5826A12E65255 /* Pods-Easy-Talk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Easy-Talk/PrefixHeader.pch";
 				INFOPLIST_FILE = "Easy-Talk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-Talk";
@@ -489,6 +510,7 @@
 			baseConfigurationReference = 43A2B54D9B506461B058AED5 /* Pods-Easy-Talk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Easy-Talk/PrefixHeader.pch";
 				INFOPLIST_FILE = "Easy-Talk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-Talk";

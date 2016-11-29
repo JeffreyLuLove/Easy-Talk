@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C8FEBC1DED8EB80044DA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEBB1DED8EB80044DA83 /* main.m */; };
+		85C8FEBF1DED8EB80044DA83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEBE1DED8EB80044DA83 /* AppDelegate.m */; };
+		85C8FEC81DED8EB80044DA83 /* Easy_Talk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEC61DED8EB80044DA83 /* Easy_Talk.xcdatamodeld */; };
+		85C8FECA1DED8EB90044DA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C8FEC91DED8EB90044DA83 /* Assets.xcassets */; };
+		85C8FECD1DED8EB90044DA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8FECB1DED8EB90044DA83 /* LaunchScreen.storyboard */; };
+		85C8FED81DED8EB90044DA83 /* Easy_TalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FED71DED8EB90044DA83 /* Easy_TalkTests.m */; };
+		85C8FEE31DED8EB90044DA83 /* Easy_TalkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8FEE21DED8EB90044DA83 /* Easy_TalkUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C8FED41DED8EB90044DA83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C8FEAF1DED8EB80044DA83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8FEB61DED8EB80044DA83;
+			remoteInfo = "Easy-Talk";
+		};
+		85C8FEDF1DED8EB90044DA83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C8FEAF1DED8EB80044DA83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8FEB61DED8EB80044DA83;
+			remoteInfo = "Easy-Talk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85C8FEB71DED8EB80044DA83 /* Easy-Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy-Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8FEBB1DED8EB80044DA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85C8FEBD1DED8EB80044DA83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85C8FEBE1DED8EB80044DA83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85C8FEC71DED8EB80044DA83 /* Easy_Talk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Easy_Talk.xcdatamodel; sourceTree = "<group>"; };
+		85C8FEC91DED8EB90044DA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C8FECC1DED8EB90044DA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C8FECE1DED8EB90044DA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8FED31DED8EB90044DA83 /* Easy-TalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy-TalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8FED71DED8EB90044DA83 /* Easy_TalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Easy_TalkTests.m; sourceTree = "<group>"; };
+		85C8FED91DED8EB90044DA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8FEDE1DED8EB90044DA83 /* Easy-TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy-TalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8FEE21DED8EB90044DA83 /* Easy_TalkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Easy_TalkUITests.m; sourceTree = "<group>"; };
+		85C8FEE41DED8EB90044DA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C8FEB41DED8EB80044DA83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FED01DED8EB90044DA83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FEDB1DED8EB90044DA83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C8FEAE1DED8EB80044DA83 = {
+			isa = PBXGroup;
+			children = (
+				85C8FEB91DED8EB80044DA83 /* Easy-Talk */,
+				85C8FED61DED8EB90044DA83 /* Easy-TalkTests */,
+				85C8FEE11DED8EB90044DA83 /* Easy-TalkUITests */,
+				85C8FEB81DED8EB80044DA83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85C8FEB81DED8EB80044DA83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C8FEB71DED8EB80044DA83 /* Easy-Talk.app */,
+				85C8FED31DED8EB90044DA83 /* Easy-TalkTests.xctest */,
+				85C8FEDE1DED8EB90044DA83 /* Easy-TalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C8FEB91DED8EB80044DA83 /* Easy-Talk */ = {
+			isa = PBXGroup;
+			children = (
+				85C8FEBD1DED8EB80044DA83 /* AppDelegate.h */,
+				85C8FEBE1DED8EB80044DA83 /* AppDelegate.m */,
+				85C8FEC91DED8EB90044DA83 /* Assets.xcassets */,
+				85C8FECB1DED8EB90044DA83 /* LaunchScreen.storyboard */,
+				85C8FECE1DED8EB90044DA83 /* Info.plist */,
+				85C8FEC61DED8EB80044DA83 /* Easy_Talk.xcdatamodeld */,
+				85C8FEBA1DED8EB80044DA83 /* Supporting Files */,
+			);
+			path = "Easy-Talk";
+			sourceTree = "<group>";
+		};
+		85C8FEBA1DED8EB80044DA83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C8FEBB1DED8EB80044DA83 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85C8FED61DED8EB90044DA83 /* Easy-TalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C8FED71DED8EB90044DA83 /* Easy_TalkTests.m */,
+				85C8FED91DED8EB90044DA83 /* Info.plist */,
+			);
+			path = "Easy-TalkTests";
+			sourceTree = "<group>";
+		};
+		85C8FEE11DED8EB90044DA83 /* Easy-TalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C8FEE21DED8EB90044DA83 /* Easy_TalkUITests.m */,
+				85C8FEE41DED8EB90044DA83 /* Info.plist */,
+			);
+			path = "Easy-TalkUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C8FEB61DED8EB80044DA83 /* Easy-Talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8FEE71DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-Talk" */;
+			buildPhases = (
+				85C8FEB31DED8EB80044DA83 /* Sources */,
+				85C8FEB41DED8EB80044DA83 /* Frameworks */,
+				85C8FEB51DED8EB80044DA83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy-Talk";
+			productName = "Easy-Talk";
+			productReference = 85C8FEB71DED8EB80044DA83 /* Easy-Talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C8FED21DED8EB90044DA83 /* Easy-TalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8FEEA1DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-TalkTests" */;
+			buildPhases = (
+				85C8FECF1DED8EB90044DA83 /* Sources */,
+				85C8FED01DED8EB90044DA83 /* Frameworks */,
+				85C8FED11DED8EB90044DA83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C8FED51DED8EB90044DA83 /* PBXTargetDependency */,
+			);
+			name = "Easy-TalkTests";
+			productName = "Easy-TalkTests";
+			productReference = 85C8FED31DED8EB90044DA83 /* Easy-TalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C8FEDD1DED8EB90044DA83 /* Easy-TalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8FEED1DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-TalkUITests" */;
+			buildPhases = (
+				85C8FEDA1DED8EB90044DA83 /* Sources */,
+				85C8FEDB1DED8EB90044DA83 /* Frameworks */,
+				85C8FEDC1DED8EB90044DA83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C8FEE01DED8EB90044DA83 /* PBXTargetDependency */,
+			);
+			name = "Easy-TalkUITests";
+			productName = "Easy-TalkUITests";
+			productReference = 85C8FEDE1DED8EB90044DA83 /* Easy-TalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C8FEAF1DED8EB80044DA83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85C8FEB61DED8EB80044DA83 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					85C8FED21DED8EB90044DA83 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 85C8FEB61DED8EB80044DA83;
+					};
+					85C8FEDD1DED8EB90044DA83 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 85C8FEB61DED8EB80044DA83;
+					};
+				};
+			};
+			buildConfigurationList = 85C8FEB21DED8EB80044DA83 /* Build configuration list for PBXProject "Easy-Talk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C8FEAE1DED8EB80044DA83;
+			productRefGroup = 85C8FEB81DED8EB80044DA83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C8FEB61DED8EB80044DA83 /* Easy-Talk */,
+				85C8FED21DED8EB90044DA83 /* Easy-TalkTests */,
+				85C8FEDD1DED8EB90044DA83 /* Easy-TalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C8FEB51DED8EB80044DA83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8FECD1DED8EB90044DA83 /* LaunchScreen.storyboard in Resources */,
+				85C8FECA1DED8EB90044DA83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FED11DED8EB90044DA83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FEDC1DED8EB90044DA83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C8FEB31DED8EB80044DA83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8FEBF1DED8EB80044DA83 /* AppDelegate.m in Sources */,
+				85C8FEBC1DED8EB80044DA83 /* main.m in Sources */,
+				85C8FEC81DED8EB80044DA83 /* Easy_Talk.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FECF1DED8EB90044DA83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8FED81DED8EB90044DA83 /* Easy_TalkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8FEDA1DED8EB90044DA83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8FEE31DED8EB90044DA83 /* Easy_TalkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C8FED51DED8EB90044DA83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8FEB61DED8EB80044DA83 /* Easy-Talk */;
+			targetProxy = 85C8FED41DED8EB90044DA83 /* PBXContainerItemProxy */;
+		};
+		85C8FEE01DED8EB90044DA83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8FEB61DED8EB80044DA83 /* Easy-Talk */;
+			targetProxy = 85C8FEDF1DED8EB90044DA83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C8FECB1DED8EB90044DA83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C8FECC1DED8EB90044DA83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C8FEE51DED8EB90044DA83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85C8FEE61DED8EB90044DA83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C8FEE81DED8EB90044DA83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Easy-Talk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85C8FEE91DED8EB90044DA83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Easy-Talk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85C8FEEB1DED8EB90044DA83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Easy-TalkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-TalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy-Talk.app/Easy-Talk";
+			};
+			name = Debug;
+		};
+		85C8FEEC1DED8EB90044DA83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Easy-TalkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-TalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy-Talk.app/Easy-Talk";
+			};
+			name = Release;
+		};
+		85C8FEEE1DED8EB90044DA83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Easy-TalkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-TalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Easy-Talk";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		85C8FEEF1DED8EB90044DA83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Easy-TalkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.com.Easy-TalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Easy-Talk";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C8FEB21DED8EB80044DA83 /* Build configuration list for PBXProject "Easy-Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8FEE51DED8EB90044DA83 /* Debug */,
+				85C8FEE61DED8EB90044DA83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8FEE71DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8FEE81DED8EB90044DA83 /* Debug */,
+				85C8FEE91DED8EB90044DA83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85C8FEEA1DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-TalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8FEEB1DED8EB90044DA83 /* Debug */,
+				85C8FEEC1DED8EB90044DA83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85C8FEED1DED8EB90044DA83 /* Build configuration list for PBXNativeTarget "Easy-TalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8FEEE1DED8EB90044DA83 /* Debug */,
+				85C8FEEF1DED8EB90044DA83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85C8FEC61DED8EB80044DA83 /* Easy_Talk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85C8FEC71DED8EB80044DA83 /* Easy_Talk.xcdatamodel */,
+			);
+			currentVersion = 85C8FEC71DED8EB80044DA83 /* Easy_Talk.xcdatamodel */;
+			path = Easy_Talk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85C8FEAF1DED8EB80044DA83 /* Project object */;
+}

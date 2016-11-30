@@ -94,6 +94,14 @@
 
 - (void)registerBtnAction:(UIButton *)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"注册新账户" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"创建账户";
+    }];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"创建密码";
+    }];
+    
     UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"注册" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:alert.textFields[0].text password:alert.textFields[1].text withCompletion:^(NSString *username, NSString *password, EMError *error) {
@@ -104,17 +112,9 @@
             }
         } onQueue:nil];
     }];
-
-    [alert addAction:action2];
     [alert addAction:action1];
-    
-    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"创建账户";
-    }];
-    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"创建密码";
-    }];
-    
+    [alert addAction:action2];
+
     [self presentViewController:alert animated:YES completion:nil];
 }
 

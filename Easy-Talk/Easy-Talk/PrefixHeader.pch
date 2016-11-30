@@ -9,6 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#define kLoginButtonColor [UIColor colorWithRed:100/255.0 green:160/255.0 blue:210/255.0 alpha:1]
 #define MAS_SHORTHAND_GLOBALS
 #import <Masonry.h>
 #import <EaseMob.h>

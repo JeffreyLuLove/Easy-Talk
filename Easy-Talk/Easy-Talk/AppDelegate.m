@@ -48,7 +48,6 @@
 // 申请处理时间
 - (void)applicationWillTerminate:(UIApplication *)application {
     [[EaseMob sharedInstance] applicationWillTerminate:application];
-    [self saveContext];
 }
 
 #pragma mark - Core Data stack

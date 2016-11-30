@@ -53,7 +53,7 @@
     [loadBtn setTitleColor:[UIColor lightTextColor] forState:UIControlStateHighlighted];
     loadBtn.layer.cornerRadius = 5;
     loadBtn.layer.masksToBounds = YES;
-    loadBtn.backgroundColor = [UIColor colorWithRed:100/255.0 green:160/255.0 blue:210/255.0 alpha:1];
+    loadBtn.backgroundColor = kLoginButtonColor;
     [self.view addSubview:loadBtn];
     [loadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(0);
@@ -69,14 +69,14 @@
     [registerBtn setTitleColor:[UIColor lightTextColor] forState:UIControlStateHighlighted];
     registerBtn.layer.cornerRadius = 5;
     registerBtn.layer.masksToBounds = YES;
-    registerBtn.backgroundColor = [UIColor colorWithRed:100/255.0 green:160/255.0 blue:210/255.0 alpha:1];
+    registerBtn.backgroundColor = kLoginButtonColor;
     [self.view addSubview:registerBtn];
     [registerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(20);
         make.bottom.equalTo(-20);
         make.size.equalTo(CGSizeMake(50, 20));
     }];
-    [loadBtn addTarget:self action:@selector(registerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [registerBtn addTarget:self action:@selector(registerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)loadBtnAction:(UIButton *)sender {
@@ -93,13 +93,29 @@
 }
 
 - (void)registerBtnAction:(UIButton *)sender {
-    [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:self.usernameTF.text password:self.passwordTF.text withCompletion:^(NSString *username, NSString *password, EMError *error) {
-        if (! error) {
-            [SVProgressHUD showInfoWithStatus:@"注册成功"];
-        }else {
-            [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"%@",error ]];
-        }
-    } onQueue:nil];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"注册新账户" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"注册" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:alert.textFields[0].text password:alert.textFields[1].text withCompletion:^(NSString *username, NSString *password, EMError *error) {
+            if (! error) {
+                [SVProgressHUD showInfoWithStatus:@"注册成功"];
+            }else {
+                [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"%@", error]];
+            }
+        } onQueue:nil];
+    }];
+
+    [alert addAction:action2];
+    [alert addAction:action1];
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"创建账户";
+    }];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"创建密码";
+    }];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

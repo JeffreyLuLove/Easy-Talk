@@ -120,7 +120,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+    //判断是否自动登录了，如果自动登录，就跳转到登录界面
     if ([[EaseMob sharedInstance].chatManager isAutoLoginEnabled]) {
         FriendsTableViewController *tvc = [[FriendsTableViewController alloc] init];
         [self presentViewController:[[UINavigationController alloc] initWithRootViewController:tvc] animated:YES completion:nil];

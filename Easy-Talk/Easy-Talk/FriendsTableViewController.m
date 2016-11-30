@@ -8,10 +8,11 @@
 
 #import "FriendsTableViewController.h"
 #import "EaseMobManager.h"
+#import "ChattingViewController.h"
 
 @interface FriendsTableViewController () <EMChatManagerDelegate>
 
-@property (nonatomic, strong)NSMutableArray *friends;
+@property (nonatomic, strong) NSMutableArray *friends;
 
 @end
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"好友列表";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"登出" style:UIBarButtonItemStyleDone target:self action:@selector(logOut)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"退出登录" style:UIBarButtonItemStyleDone target:self action:@selector(logOut)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAction)];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(updateFriendsAndRequestsAction) name:@"FriendStatusChangeNotification" object:nil];
 }
@@ -29,7 +30,6 @@
     //退出登录
     [[EaseMob sharedInstance].chatManager asyncLogoffWithUnbindDeviceToken:YES completion:^(NSDictionary *info, EMError *error) {
         if (! error) {
-            NSLog(@"退出成功");
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     } onQueue:nil];
@@ -59,7 +59,7 @@
 - (void)updateFriendsAndRequestsAction {
     //获取好友列表
     [[EaseMob sharedInstance].chatManager asyncFetchBuddyListWithCompletion:^(NSArray *buddyList, EMError *error) {
-        if (! error) {
+        if (!error) {
             self.friends = [NSMutableArray array];
             for (EMBuddy *buddy in buddyList) {
                 [self.friends addObject:buddy.username];
@@ -72,7 +72,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self updateFriendsAndRequestsAction];
-    
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,7 +90,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section==0) {//好友请求
+    if (section == 0) {//好友请求
         return [EaseMobManager sharedManager].requests.count;
     }
     return self.friends.count;
@@ -98,7 +101,7 @@
     if (! cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
-    if (indexPath.section==0) {
+    if (indexPath.section == 0) {
         NSArray *infoArr = [EaseMobManager sharedManager].requests[indexPath.row];
         cell.textLabel.text = infoArr[0];
         cell.detailTextLabel.text = infoArr[1];
@@ -138,6 +141,10 @@
         [alert addAction:action1];
         [alert addAction:action2];
         [self presentViewController:alert animated:YES completion:nil];
+    }else {
+        ChattingViewController *vc = [ChattingViewController new];
+        vc.toUsername = self.friends[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
@@ -158,8 +165,8 @@
         }
         // 从本地tableView删除好友
         [self.friends removeObjectAtIndex:indexPath.row];
-        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
